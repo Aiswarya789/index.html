@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+</head>
+<body>
+    <img id="hoverImage" <img src="/home/kali/Downloads/lotus.jpg" style="display: block; width: 1200px;">
+
+    <script>
+        // Get the image element
+        const image = document.getElementById('hoverImage');
+
+        // Add mouseover event listener
+        image.addEventListener('mouseover', () => {
+            image.style.opacity = '0';
+        });
+
+        // Add mouseout event listener
+        image.addEventListener('mouseout', () => {
+            image.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
